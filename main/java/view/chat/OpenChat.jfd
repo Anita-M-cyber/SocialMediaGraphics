@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.7.0.1134" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "messageField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 270
+				"width": 310
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendBtn"
+				"text": "Send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendBtn", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 318
+				"y": 270
+				"height": 30
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "messagesScroll"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 90
+				"width": 380
+				"height": 180
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLabel"
+				"text": "text"
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 60
+				"width": 380
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBtn", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 5
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "showMembers"
+				"text": "Show Members"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showMembers", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 34
+				"height": 30
+				"width": 140
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "editBtn"
+				"text": "Edit"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editBtn", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 175
+				"y": 34
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteChat"
+				"text": "Delete Chat"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteChat", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 255
+				"y": 5
+				"width": 133
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
